@@ -1,0 +1,61 @@
+# ============================================
+# RAHASIA / KREDENSIAL (JANGAN PERNAH DI-PUSH)
+# ============================================
+apikey-chatbot.txt
+src/services/aiService.ts
+*.pem
+*.key
+
+# ============================================
+# DEPENDENSI
+# ============================================
+node_modules/
+
+# ============================================
+# HASIL BUILD (dibuat ulang lewat `npm run build`)
+# ============================================
+dist/
+*.tsbuildinfo
+
+# ============================================
+# FILE & FOLDER KHUSUS AI AGENT (tidak ikut di-push)
+# ============================================
+.agents/
+AGENTS.md
+antislop.md
+anti-slop/
+graphify-out/
+
+# ============================================
+# ASET DUPLIKAT (sudah ada di public/logo-smk.png)
+# ============================================
+LOGO SMK N 1 BAWANG.png
+
+# ============================================
+# LOG
+# ============================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# ============================================
+# CACHE TOOLING
+# ============================================
+.vite/
+.cache/
+.eslintcache
+coverage/
+
+# ============================================
+# FILE SISTEM OS & EDITOR
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.suo

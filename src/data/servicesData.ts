@@ -1,0 +1,172 @@
+import { DigitalService } from '../types';
+
+export const DIGITAL_SERVICES: DigitalService[] = [
+  {
+    id: "elibrary",
+    name: "Graha Pustaka (Perpustakaan Digital)",
+    code: "LIB-SKANSA",
+    category: "Akademik & Pembelajaran",
+    description: "Katalog online (OPAC) ribuan buku kejuruan, e-book teknologi terkini, jurnal riset vokasi, dan peminjaman mandiri bagi civitas akademika.",
+    targetUsers: ["Siswa", "Guru", "Masyarakat"],
+    url: "https://libskanza.smkn1bawang.sch.id/",
+    statusText: "Aktif Online",
+    isInternal: true,
+    iconName: "BookOpen"
+  },
+  {
+    id: "lsp",
+    name: "LSP P1 SMKN 1 Bawang (Sertifikasi BNSP)",
+    code: "LSP-P1",
+    category: "Akademik & Pembelajaran",
+    description: "Lembaga Sertifikasi Profesi Pihak Pertama berlisensi BNSP untuk uji kompetensi keahlian dan sertifikasi profesi kerja nasional 8 jurusan.",
+    targetUsers: ["Siswa"],
+    url: "https://lsp.smkn1bawang.sch.id/",
+    statusText: "Terlisensi BNSP",
+    isInternal: true,
+    iconName: "FileCheck"
+  },
+  {
+    id: "ppdb",
+    name: "Portal Info PPDB / SPMB Skansa",
+    code: "PPDB-SKANSA",
+    category: "Layanan Publik & Bantuan",
+    description: "Pusat informasi resmi Penerimaan Peserta Didik Baru, petunjuk teknis jalur pendaftaran, verifikasi berkas rapor, dan alur seleksi.",
+    targetUsers: ["Siswa", "Orang Tua", "Masyarakat"],
+    url: "https://ppdb.smkn1bawang.sch.id/",
+    statusText: "Siaga Pendaftaran",
+    isInternal: true,
+    iconName: "Award"
+  },
+  {
+    id: "elskanza",
+    name: "Elskanza (E-Learning Skansa)",
+    code: "ELSKANZA",
+    category: "Akademik & Pembelajaran",
+    description: "Platform pembelajaran daring terpadu untuk materi kurikulum merdeka, penugasan proyek kejuruan, asesmen, dan modul ajar industri.",
+    targetUsers: ["Siswa", "Guru"],
+    url: "https://elskanza.smkn1bawang.sch.id/",
+    statusText: "Aktif 24/7",
+    isInternal: true,
+    iconName: "GraduationCap"
+  },
+  {
+    id: "belajar",
+    name: "Jurnal Pembelajaran Digital",
+    code: "BELAJAR",
+    category: "Akademik & Pembelajaran",
+    description: "Pencatatan agenda kegiatan belajar mengajar harian, monitoring capaian kompetensi, dan pelaporan progres kelas oleh tenaga pendidik.",
+    targetUsers: ["Guru", "Siswa"],
+    url: "https://belajar.smkn1bawang.sch.id/",
+    statusText: "Aktif KBM",
+    isInternal: true,
+    iconName: "BookOpen"
+  },
+  {
+    id: "jurnalpkl",
+    name: "Jurnal PKL & Prakerin Siswa",
+    code: "JURNAL-PKL",
+    category: "Akademik & Pembelajaran",
+    description: "Sistem pelaporan presensi harian, logbook kegiatan lapangan, verifikasi pembimbing industri, dan penilaian Praktik Kerja Lapangan.",
+    targetUsers: ["Siswa", "Guru", "Orang Tua"],
+    url: "http://jurnalpkl.smkn1bawang.sch.id/",
+    statusText: "Monitoring Aktif",
+    isInternal: true,
+    iconName: "Briefcase"
+  },
+  {
+    id: "karya",
+    name: "Portal Karya & Portofolio Siswa",
+    code: "KARYA-SKANSA",
+    category: "Akademik & Pembelajaran",
+    description: "Showcase hasil karya inovatif siswa antardisiplin: poster komunikasi visual, aplikasi web, busana, produk olahan, dan prototipe otomasi.",
+    targetUsers: ["Siswa", "Guru", "Masyarakat"],
+    url: "https://karya.smkn1bawang.sch.id/",
+    statusText: "Etalase Publik",
+    isInternal: true,
+    iconName: "Award"
+  },
+  {
+    id: "bkk",
+    name: "BKK Skansa Career & Talent Hub",
+    code: "BKK-CAREER",
+    category: "Karir & Alumni",
+    description: "Pusat informasi lowongan kerja eksklusif dari 160+ mitra industri, pendaftaran tes rekrutmen massal di kampus, dan pembekalan karir.",
+    targetUsers: ["Alumni", "Siswa"],
+    url: "https://bkk.smkn1bawang.sch.id",
+    statusText: "Lowongan Terbuka",
+    isInternal: true,
+    iconName: "Briefcase"
+  },
+  {
+    id: "tracer",
+    name: "Tracer Study & Jejaring Alumni",
+    code: "TRACER-STUDY",
+    category: "Karir & Alumni",
+    description: "Sistem pelacakan karir lulusan (bekerja, berwirausaha, atau melanjutkan kuliah) untuk penyelarasan kurikulum vokasi berbasis data.",
+    targetUsers: ["Alumni"],
+    url: "https://tracer.smkn1bawang.sch.id",
+    statusText: "Terbuka Alumni",
+    isInternal: true,
+    iconName: "Users"
+  },
+  {
+    id: "skl",
+    name: "SKL Online (Pengumuman Kelulusan)",
+    code: "SKL-PORTAL",
+    category: "Administrasi & Data",
+    description: "Portal resmi pengecekan status kelulusan peserta didik tingkat XII secara daring dan pengunduhan Surat Keterangan Lulus (SKL) ber-QR Code legal.",
+    targetUsers: ["Siswa", "Orang Tua"],
+    url: "https://skl.smkn1bawang.sch.id",
+    statusText: "Siaga Pengumuman",
+    isInternal: true,
+    iconName: "Award"
+  },
+  {
+    id: "presensi",
+    name: "Sistem Presensi & Monitoring Siswa",
+    code: "E-PRESENSI",
+    category: "Administrasi & Data",
+    description: "Sistem pencatatan kehadiran digital berbasis kartu identitas pelajar dan rekapitulasi kehadiran kelas secara real-time.",
+    targetUsers: ["Siswa", "Guru", "Orang Tua"],
+    url: "https://presensi.smkn1bawang.sch.id",
+    statusText: "Terintegrasi",
+    isInternal: true,
+    iconName: "CheckCircle"
+  },
+  {
+    id: "tanya",
+    name: "Tanya Skansa (Helpdesk & Pelayanan)",
+    code: "HELPDESK",
+    category: "Layanan Publik & Bantuan",
+    description: "Layanan informasi publik satu pintu untuk konsultasi calon siswa, permohonan legalisir ijazah, pengaduan masyarakat, dan informasi resmi.",
+    targetUsers: ["Siswa", "Orang Tua", "Masyarakat"],
+    url: "https://tanya.smkn1bawang.sch.id",
+    statusText: "Respon Cepat",
+    isInternal: true,
+    iconName: "HelpCircle"
+  },
+  {
+    id: "wbs",
+    name: "Layanan Pengaduan & Aspirasi (WBS SKANSA)",
+    code: "WBS-INTEGRITAS",
+    category: "Layanan Publik & Bantuan",
+    description: "Kanal pelaporan resmi, aman, dan rahasia untuk ketidaknyamanan, perundungan, sarana rusak, atau saran pengembangan sekolah.",
+    targetUsers: ["Siswa", "Orang Tua", "Masyarakat", "Guru"],
+    url: "#/pengaduan",
+    statusText: "Anonim & Aman",
+    isInternal: true,
+    iconName: "ShieldCheck"
+  },
+  {
+    id: "unduhan",
+    name: "Pusat Unduhan Dokumen Publik",
+    code: "UNDUHAN-RESMI",
+    category: "Administrasi & Data",
+    description: "Akses unduhan dokumen resmi sekolah: Laporan Realisasi Dana BOSP, Kalender Akademik, SOP Sekolah, dan Dokumen Persyaratan SPMB.",
+    targetUsers: ["Siswa", "Orang Tua", "Masyarakat"],
+    url: "#/unduhan",
+    statusText: "Akses Terbuka",
+    isInternal: true,
+    iconName: "FileCheck"
+  }
+];

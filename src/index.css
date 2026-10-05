@@ -1,0 +1,114 @@
+@import 'lenis/dist/lenis.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-institutional-primary: #1E3A8A;
+    --color-institutional-secondary: #1D4ED8;
+    --color-brand-blue: #2563EB;
+  }
+
+  html {
+    color-scheme: light;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #F8FAFD;
+    color: #0F172A;
+    overflow-x: clip;
+  }
+
+  /* Accessible outline focus state */
+  :focus-visible {
+    outline: 2px solid #2563EB;
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  /* Subtle border and divider helpers */
+  .border-institutional {
+    border-color: rgba(19, 46, 82, 0.12);
+  }
+  
+  .border-institutional-light {
+    border-color: rgba(219, 234, 254, 0.6);
+  }
+
+  /* Editorial typography classes */
+  .tracking-tightest {
+    letter-spacing: -0.035em;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Architectural Skeleton Shimmer */
+  @keyframes skansaShimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(241, 245, 249, 0.9) 0%,
+      rgba(226, 232, 240, 0.8) 25%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(226, 232, 240, 0.8) 75%,
+      rgba(241, 245, 249, 0.9) 100%
+    );
+    background-size: 200% 100%;
+    animation: skansaShimmer 1.8s ease-in-out infinite;
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Lenis Smooth Scroll Rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
